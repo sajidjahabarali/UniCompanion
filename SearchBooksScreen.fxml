@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css"
+            xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="se_project.SearchBooksScreenController">
+    <children>
+        <GridPane id="GridPane" fx:id="bookListPane" prefHeight="600.0" prefWidth="430.0" layoutX="10" layoutY="150.0" stylesheets="@css/gradient-background.css"
+                  xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+            <children>
+            </children>
+        </GridPane>
+        <Label alignment="CENTER" layoutX="32.0" layoutY="47.0" text="Search for:">
+            <font>
+                <Font name="Georgia Italic" size="18.0"/>
+            </font>
+        </Label>
+        <Label layoutX="283.0" layoutY="47.0" text="in">
+            <font>
+                <Font name="Georgia Italic" size="18.0"/>
+            </font>
+        </Label>
+        <JFXTextField id="JFXTextField" fx:id="bookNameField" alignment="CENTER" focusColor="#94afa9" labelFloat="true" layoutX="123.0" layoutY="41.0"
+                      prefHeight="34.0" prefWidth="161.0" promptText="Book Name/ISBN" unFocusColor="BLACK">
+            <font>
+                <Font name="Georgia Italic" size="18.0"/>
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="searchButton" alignment="CENTER" buttonType="RAISED" layoutX="122.0" layoutY="99.0"
+                   onAction="#handleSearchAction" prefHeight="35.0" prefWidth="169.0" ripplerFill="#b8dedb"
+                   stylesheets="@css/login-screen.css" text="Search">
+            <font>
+                <Font name="Georgia Italic" size="18.0"/>
+            </font>
+        </JFXButton>
+        <ImageView fitHeight="56.0" fitWidth="51.0" layoutX="-8.0" layoutY="40.0" pickOnBounds="true"
+                   preserveRatio="true">
+            <image>
+                <Image url="@images/reading-book.png"/>
+            </image>
+        </ImageView>
+        <JFXButton fx:id="exitButton" alignment="CENTER" layoutX="21.0" layoutY="679.0" onAction="#setExitAction"
+                   prefHeight="58.0" prefWidth="222.0" ripplerFill="#b8dedb" stylesheets="@css/login-screen.css">
+            <font>
+                <Font name="Georgia Italic" size="18.0"/>
+            </font>
+            <graphic>
+                <ImageView fitHeight="89.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/exit.png"/>
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#9fdacc" labelFloat="true" layoutX="267.0"
+                      layoutY="692.0" prefHeight="34.0" prefWidth="161.0" text="Exit" unFocusColor="BLACK">
+            <font>
+                <Font name="Georgia Italic" size="18.0"/>
+            </font>
+        </JFXTextField>
+        <ChoiceBox fx:id="facultiesBox" accessibleRole="CHECK_BOX" layoutX="302.0" layoutY="45.0" opacity="0.71"
+                   prefHeight="26.0" prefWidth="147.0"
+                   style="-fx-font-family: Georgia; -fx-font-size: 14px; -fx-font-style: Italic;">
+            <effect>
+                <InnerShadow/>
+            </effect>
+        </ChoiceBox>
+    </children>
+</AnchorPane>

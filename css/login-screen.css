@@ -1,0 +1,10 @@
+.button{
+    -fx-border-color:#000000;
+    -fx-border-radius:50px;
+    -fx-background-radius:50px;
+}
+
+.wrong-credentials{
+    -jfx-unfocus-color: #FF0000;
+    -jfx-focus-color: #FF0000;
+}

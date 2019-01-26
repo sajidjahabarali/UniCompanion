@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.HomeScreenAdministratorController">
+    <children>
+        <ImageView fitHeight="72.0" fitWidth="351.0" layoutX="49.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/logo.png" />
+            </image>
+        </ImageView>
+
+        <JFXButton fx:id="shutDownSystemButton" layoutX="223.0" layoutY="77.0" onAction="#handleShutDownSystemButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/shutdown.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="10.0" layoutY="95.0" prefHeight="30.0" prefWidth="200.0" text="Shut Down System">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+
+
+        <JFXButton fx:id="addAccountButton" layoutX="223.0" layoutY="316.0" onAction="#handleAddAccountButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/add-account.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="changeAccountPasswordButton" layoutX="16.0" layoutY="436.0" onAction="#handleChangePasswordButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/password.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="removeAccountButton" layoutX="216.0" layoutY="555.0" onAction="#handleRemoveAccountButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/remove-account.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXButton fx:id="logOutButton" layoutX="21.0" layoutY="687.0" onAction="#handleLogOutButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/exit.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="10.0" layoutY="334.0" prefHeight="30.0" prefWidth="200.0" text="Add Account">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="223.0" layoutY="454.0" prefHeight="34.0" prefWidth="220.0" text="Change Account Password">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="10.0" layoutY="590.0" prefHeight="30.0" prefWidth="200.0" text="Remove Account">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="233.0" layoutY="705.0" prefHeight="30.0" prefWidth="200.0" text=" Log out">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="233.0" layoutY="223.0" prefHeight="30.0" prefWidth="200.0" text="Library">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+        <JFXButton fx:id="libraryButton" layoutX="21.0" layoutY="205.0" onAction="#handleLibraryButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/library.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+    </children>
+</AnchorPane>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.FeedbackScreenController">
+   <children>
+      <JFXButton fx:id="exitButton" layoutX="23.0" layoutY="670.0" onAction="#setExitAction" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/login-screen.css">
+         <graphic>
+            <ImageView fitHeight="120.0" fitWidth="91.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="244.0" layoutY="696.0" prefHeight="30.0" prefWidth="200.0" text="Exit">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextArea focusColor="#b8dfdd" layoutX="10.0" layoutY="180.0" prefHeight="283.0" prefWidth="429.0" promptText="Add your feedback">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextArea>
+      <JFXButton fx:id="submitButton" layoutX="120.0" layoutY="485.0" onAction="#setExitAction" prefHeight="30.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/login-screen.css" text="Submit">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

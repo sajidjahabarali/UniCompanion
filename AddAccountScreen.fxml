@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.AddAccountScreenController">
+   <children>
+      <JFXButton fx:id="addAccountButton" alignment="CENTER" layoutX="138.0" layoutY="420.0" onAction="#manage" prefHeight="46.0" prefWidth="167.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css" text="Add Account">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exitButton" layoutX="29.0" layoutY="660.0" onAction="#handleLogOutButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="236.0" layoutY="678.0" prefHeight="30.0" prefWidth="200.0" text=" Exit">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField fx:id="usernameField" alignment="CENTER" focusColor="#94afa9" labelFloat="true" layoutX="46.0" layoutY="179.0" prefHeight="26.0" prefWidth="351.0" promptText="Username" stylesheets="@css/login-screen.css" unFocusColor="BLACK">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXPasswordField fx:id="passwordField" alignment="CENTER" focusColor="#94afa9" labelFloat="true" layoutX="46.0" layoutY="250.0" prefHeight="26.0" prefWidth="351.0" promptText="Password" stylesheets="@css/login-screen.css" unFocusColor="BLACK">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXPasswordField>
+      <ChoiceBox fx:id="accountTypeBox" accessibleRole="CHECK_BOX" layoutX="101.0" layoutY="332.0" opacity="0.71" prefHeight="34.0" prefWidth="238.0" style="-fx-font-family: Georgia; -fx-font-size: 14px; -fx-font-style: Italic; -fx-node-alignment: center;">
+         <effect>
+            <InnerShadow />
+         </effect>
+      </ChoiceBox>
+   </children>
+</AnchorPane>

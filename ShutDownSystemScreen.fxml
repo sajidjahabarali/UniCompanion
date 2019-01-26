@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.ShutDownSystemScreenController">
+    <children>
+        <JFXButton fx:id="removeAccountButton" alignment="CENTER" layoutX="111.0" layoutY="400.0" onAction="#handleShutDownSystemAction" prefHeight="50.0" prefWidth="228.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css" text="Remove Account">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXButton>
+        <JFXPasswordField fx:id="passwordField" alignment="CENTER" focusColor="#b8dfdd" layoutX="80.0" layoutY="283.0" prefHeight="34.0" prefWidth="288.0" promptText="Password" unFocusColor="BLACK">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXPasswordField>
+        <JFXButton fx:id="exitButton" layoutX="29.0" layoutY="659.0" onAction="#setExitAction" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+            <graphic>
+                <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@images/exit.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </JFXButton>
+        <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="236.0" layoutY="677.0" prefHeight="30.0" prefWidth="200.0" text="Exit">
+            <font>
+                <Font name="Georgia Italic" size="18.0" />
+            </font>
+        </JFXTextField>
+        <ImageView fitHeight="34.0" fitWidth="51.0" layoutX="29.0" layoutY="283.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@images/shutdown.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.EventScreenController">
+   <children>
+      <JFXButton fx:id="removeEventButton" alignment="CENTER" buttonType="RAISED" layoutX="285.0" layoutY="25.0" onAction="#handleRemoveEventAction" prefHeight="28.0" prefWidth="150.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css" text="Remove Event" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addEventButton" alignment="CENTER" buttonType="RAISED" layoutX="14.0" layoutY="25.0" onAction="#handleAddEventAction" prefHeight="28.0" prefWidth="150.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css" text="Add Event">
+         <font>
+            <Font name="Georgia Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="addAlarmButton" alignment="CENTER" buttonType="RAISED" layoutX="14.0" layoutY="90.0" onAction="#handleAddAlarmAction" prefHeight="20.0" prefWidth="150.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css" text="Add Alarm" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="exitButton" layoutX="17.0" layoutY="707.0" onAction="#setExitAction" prefHeight="78.0" prefWidth="159.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="67.0" fitWidth="84.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dedb" layoutX="207.0" layoutY="712.0" text="Exit" unFocusColor="BLACK">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="removeAlarmButton" alignment="CENTER" buttonType="RAISED" layoutX="285.0" layoutY="90.0" onAction="#handleRemoveAlarmAction" prefHeight="20.0" prefWidth="150.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css" text="Remove Alarm" textAlignment="CENTER">
+         <font>
+            <Font name="Georgia Italic" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="202.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/alarm.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="202.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/event.png" />
+         </image>
+      </ImageView>
+       <JFXListView fx:id="listViewEvent" layoutX="14.0" layoutY="151.0" prefHeight="541.0" prefWidth="213.0" style="-fx-border-color: black;" styleClass="root" />
+       <JFXListView fx:id="listViewAlarm" layoutX="227.0" layoutY="151.0" prefHeight="541.0" prefWidth="213.0" style="-fx-border-color: black;" styleClass="root" />
+
+   </children>
+</AnchorPane>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.AddStudentEventController" >
+    
+    <JFXButton fx:id="removeStudentEventButton" alignment="CENTER" buttonType="RAISED" layoutX="285.0" layoutY="25.0" onAction="#handleRemoveEventAction" prefHeight="28.0" prefWidth="150.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css" text="Remove Event" textAlignment="CENTER">
+        <font>
+            <Font name="Georgia Italic" size="14.0" />
+        </font>
+    </JFXButton>
+    <JFXButton fx:id="addStudentEventButton" alignment="CENTER" buttonType="RAISED" layoutX="14.0" layoutY="25.0" onAction="#handleAddEventAction" prefHeight="28.0" prefWidth="150.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css" text="Add Event">
+        <font>
+            <Font name="Georgia Italic" size="14.0" />
+        </font>
+    </JFXButton>
+    <ImageView fitHeight="50.0" fitWidth="50.0" layoutX="202.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/event.png" />
+         </image>
+    </ImageView>
+    
+    <JFXListView fx:id="listViewStudentEvent" layoutX="14.0" layoutY="151.0" prefHeight="480.0" prefWidth="426.0" style="-fx-border-color: black;" styleClass="root" />
+   
+    <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="16.0" layoutY="100.0" prefHeight="30.0" prefWidth="416.0" text="Add events for all Students">
+        <font>
+            <Font name="Georgia Italic" size="18.0" />
+        </font>
+    </JFXTextField>
+    
+    
+    
+    
+    <JFXButton fx:id="exitButton" layoutX="29.0" layoutY="660.0" onAction="#handleLogOutButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css">
+        <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@images/exit.png" />
+                </image>
+            </ImageView>
+        </graphic>
+    </JFXButton>
+    <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="236.0" layoutY="678.0" prefHeight="30.0" prefWidth="200.0" text="Exit">
+        <font>
+            <Font name="Georgia Italic" size="18.0" />
+        </font>
+    </JFXTextField>
+</AnchorPane>

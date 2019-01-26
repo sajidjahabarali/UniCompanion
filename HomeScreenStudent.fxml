@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="450.0" stylesheets="@css/gradient-background.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se_project.HomeScreenStudentController">
+   <children>
+      <ImageView fitHeight="72.0" fitWidth="351.0" layoutX="49.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@images/logo.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="libraryButton" layoutX="225.0" layoutY="193.0" onAction="#handleLibraryButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/library.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="eventButton" layoutX="21.0" layoutY="313.0" onAction="#handleEventsButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/event.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="financeButton" layoutX="225.0" layoutY="427.0" onAction="#handleFinanceLoginButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/money.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="logOutButton" layoutX="225.0" layoutY="675.0" onAction="#handleLogOutButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dedb" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/exit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="7.0" layoutY="205.0" prefHeight="30.0" prefWidth="200.0" text="Library">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="244.0" layoutY="345.0" prefHeight="30.0" prefWidth="200.0" text="Events">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="7.0" layoutY="448.0" prefHeight="30.0" prefWidth="200.0" text="Finance">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="7.0" layoutY="710.0" prefHeight="30.0" prefWidth="200.0" text=" Log out">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+      <JFXButton fx:id="feedbackButton" layoutX="9.0" layoutY="555.0" onAction="#handleFeedbackButton" prefHeight="104.0" prefWidth="195.0" ripplerFill="#b8dfdd" stylesheets="@css/home-screen.css">
+         <graphic>
+            <ImageView fitHeight="94.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/feedback.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+      <JFXTextField alignment="CENTER" editable="false" focusColor="#b8dfdd" layoutX="225.0" layoutY="582.0" prefHeight="30.0" prefWidth="200.0" text="Feedback">
+         <font>
+            <Font name="Georgia Italic" size="18.0" />
+         </font>
+      </JFXTextField>
+   </children>
+</AnchorPane>
